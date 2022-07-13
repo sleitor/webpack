@@ -1,16 +1,13 @@
 {
-  "name": "webpack-test",
+  "name": "@webpack-test/app",
   "version": "1.0.0",
   "description": "Webpack test",
+  "main": "dist/bundle.js",
+  "types": "src/index.ts",
   "scripts": {
-    "build:utils": "npm run build -w utils",
-    "build:app": "npm run build -w app",
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "workspaces": [
-    "./utils",
-    "./app"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sleitor/webpack.git"
@@ -22,6 +19,7 @@
   },
   "homepage": "https://github.com/sleitor/webpack#readme",
   "devDependencies": {
+    "@webpack-test/utils": "1.0.0",
     "ts-loader": "^9.3.1",
     "typescript": "^4.7.4",
     "webpack": "^5.73.0",

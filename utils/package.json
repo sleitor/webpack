@@ -1,0 +1,13 @@
+{
+  "name": "@webpack-test/utils",
+  "version": "1.0.0",
+  "description": "utility package",
+  "main": "dist/bundle.js",
+  "types": "src/index.ts",
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dmitrii Troitskii",
+  "license": "ISC"
+}
