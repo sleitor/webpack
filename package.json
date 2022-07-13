@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Webpack test",
   "scripts": {
+    "build": "npm run build -ws",
     "build:utils": "npm run build -w utils",
     "build:app": "npm run build -w app",
+    "start": "npm run build && node app/dist/bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "workspaces": [
