@@ -1,0 +1,1 @@
+export const testFunction = (str: string) => console.log(str)
